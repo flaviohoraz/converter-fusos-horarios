@@ -3,6 +3,6 @@ const converterFusoHorario = require('./controladores/fusoshorarios');
 
 const rotas = express();
 
-rotas.get('/', converterFusoHorario);
+rotas.get('/fuso-horario', converterFusoHorario);
 
 module.exports = rotas;
