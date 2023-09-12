@@ -1,15 +1,20 @@
 # API Converter Fusos Horários
 
 ## Descrição
-API para conversão de data local de um fuso horário qualquer para um fuso horário distinto.
+API para conversão de data local de um fuso horário qualquer para um fuso horário desejado.
 
 ## Requisitos obrigatórios
-Serão utilizadas as funções `zonedTimeToUtc`, `utcToZonedTime` e `format` da biblioteca `date-fns`, que pode ser baixada no **NPM** e encontrada no link abaixo:
+- A API adotará o padrão REST;
+- O código da API estará organizado, delimitando as responsabilidades de cada arquivo, que será formado por:
+	- Um arquivo `index.js`
+	- Um arquivo `roteador.js`
+	- Uma pasta `controladores`, contendo o arquivo `fusoshorarios.js`
+- A API fará uso das funções `zonedTimeToUtc`, `utcToZonedTime` e `format` da biblioteca `date-fns`, a qual pode ser baixada no **NPM** e encontrada no link abaixo:
 
 https://www.npmjs.com/package/data-fns
 
 ## Endpoints
-A API possui rota única, que deverá retornar a data convertida para o fuso informado.
+A API possui rota única, que deverá retornar a data convertida para o fuso desejado.
 
 ```javascript
 // GET /fuso-horario
