@@ -19,7 +19,7 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 -	origem
 -	destino
 
-### Observações:
+***OBSERVAÇÕES:***
 
 - A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**
 - A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***
@@ -30,7 +30,7 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 
 1. Em caso de **sucesso**, será retornado um ***status code*** 200 e enviado, no corpo (body), um objeto com uma propriedade *Data equivalente* com a resposta.
 
-2. Em caso de **falha na validação**, a resposta terá um ***status code apropriado*** e, em seu corpo (body), um objeto com uma propriedade *mensagem* que terá como valor um texto explicando o motivo da falha.
+2. Em caso de **falha na validação**, a resposta enviará um ***status code apropriado*** e, em seu corpo (body), um objeto com a propriedade *mensagem*, que terá como valor um texto explicando o motivo da falha.
 
 ### Exemplo de Requisição
 ```javascript
@@ -58,6 +58,6 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 }
 
 {
-"mensagem":" Origem não informada ou inválida. Usar um Identificador Time Zone (TZ identifier), ex.: America/Bahia."
+"mensagem": "Origem não informada ou inválida. Usar um Identificador Time Zone (TZ identifier), ex.: America/Bahia."
 }
 ```
