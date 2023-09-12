@@ -67,3 +67,8 @@ A API possui rota única, que deverá retornar a data convertida para o fuso des
 "mensagem": "Origem não informada ou inválida. Usar um Identificador Time Zone (TZ identifier), ex.: America/Bahia."
 }
 ```
+
+## Seção de Prints da API
+![](print1)
+![](print2)
+![](print3)
