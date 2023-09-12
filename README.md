@@ -3,7 +3,7 @@
 API para conversão de data local de um fuso horário qualquer para um fuso horário distinto.
 
 ## Requisitos obrigatórios
-Serão utilizadas as funções *zonedTimeToUtc*, *utcToZonedTime* e *format* da biblioteca **date-fns**, que pode ser baixada no NPM e encontrada no link abaixo:
+Serão utilizadas as funções `zonedTimeToUtc`, `utcToZonedTime` e `format` da biblioteca `date-fns`, que pode ser baixada no **NPM** e encontrada no link abaixo:
 
 https://www.npmjs.com/package/data-fns
 
