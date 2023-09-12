@@ -69,6 +69,6 @@ A API possui rota única, que deverá retornar a data convertida para o fuso des
 ```
 
 ## Seção de Prints da API
-![](https://imgur.com/xt9roA4)
-![](https://imgur.com/z5sKogp)
-![](https://imgur.com/sBJ5vRf)
+![](https://i.imgur.com/xt9roA4.png)
+![](https://i.imgur.com/z5sKogp.png)
+![](https://i.imgur.com/sBJ5vRf.png)
