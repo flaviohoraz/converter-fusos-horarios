@@ -14,7 +14,7 @@ API para conversão de data local de um fuso horário qualquer para um fuso hor�
 https://www.npmjs.com/package/data-fns
 
 ## Endpoints
-A API possui rota única, que deverá retornar a data convertida para o fuso desejado.
+A API possui rota única com o método GET, através do endereço http://localhost:3000/fuso-horario, que deverá retornar a data convertida para o fuso horário desejado.
 
 ```javascript
 // GET /fuso-horario
@@ -69,6 +69,10 @@ A API possui rota única, que deverá retornar a data convertida para o fuso des
 ```
 
 ## Seção de Prints da API
-![](https://i.imgur.com/xt9roA4.png)
-![](https://i.imgur.com/z5sKogp.png)
+
+### Print do arquivo index.js
 ![](https://i.imgur.com/sBJ5vRf.png)
+### Print do arquivo fusoshorarios.js
+![](https://i.imgur.com/xt9roA4.png)
+### Print do arquivo roteador.js
+![](https://i.imgur.com/z5sKogp.png)
