@@ -21,10 +21,10 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 
 ### Observações:
 
-• A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**
-• A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***
-• O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***
-• A relação de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+- A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**
+- A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***
+- O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***
+- A relação de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 **Resposta** - A seguir, detalhamento das possíveis respostas:
 
