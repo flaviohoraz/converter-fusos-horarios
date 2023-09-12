@@ -6,18 +6,18 @@ const converterFusoHorario = async (req, res) => {
     const link = 'https://en.wikipedia.org/wiki/List_of_tz_database_time_zones';
 
     if (!data || data === "") {
-        return res.status(400).json(`Data não informada ou inválida. Usar o formato yyyy-MM-dd HH:mm:ss.SSS`);
+        return res.status(400).json({"mensagem": "Data não informada ou inválida. Usar o formato yyyy-MM-dd HH:mm:ss.SSS"});
     } else if (!origem || origem === "") {
-        return res.status(400).json(`Origem não informada ou inválida. Usar um Identificador Time Zone (TZ identifier), ex.: America/Bahia. ${link}`);
+        return res.status(400).json({"mensagem":" Origem não informada ou inválida. Usar um Identificador Time Zone (TZ identifier), ex.: America/Bahia. ${link}"});
     } else if (!destino || destino === "") {
-        return res.status(400).json(`Destino não informado ou inválido. Usar um Identificador Time Zone (TZ identifier), ex.: America/Sao_Paulo. ${link}`);
+        return res.status(400).json({"mensagem": "Destino não informado ou inválido. Usar um Identificador Time Zone (TZ identifier), ex.: America/Sao_Paulo. ${link}"});
     }
 
     try {
         const dataUtc = zonedTimeToUtc(data, origem);
         const dataUtcLocalDestino = utcToZonedTime(dataUtc, destino);
         const dataLocalDestino = format(dataUtcLocalDestino, padraoData, { timeZone: destino });
-        return res.status(200).json(dataLocalDestino);
+        return res.status(200).json({ "Data equivalente": dataLocalDestino });
     } catch (erro) {
         return res.status(400).json(`Ocorreu um erro: ${erro.message}`);
     }
