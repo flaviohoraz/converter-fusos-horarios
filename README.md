@@ -14,7 +14,7 @@ API para conversão de data local de um fuso horário qualquer para um fuso hor�
 https://www.npmjs.com/package/data-fns
 
 ## Endpoints
-A API possui rota única com o método GET, através do endereço http://localhost:3000/fuso-horario, que deverá retornar a data convertida para o fuso horário desejado.
+A API possui rota única com o método GET, através do endereço `http://localhost:3000/fuso-horario`, que deverá retornar a data convertida para o fuso horário desejado.
 
 ```javascript
 // GET /fuso-horario
@@ -30,7 +30,7 @@ A API possui rota única com o método GET, através do endereço http://localho
 - A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**.
 - A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***.
 - O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***.
-- Uma lista de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
+- Uma lista de **TZ identifier** pode ser conferida em `https://en.wikipedia.org/wiki/List_of_tz_database_time_zones`.
 
 **Resposta** - A seguir, detalhamento das possíveis respostas da rota:
 
