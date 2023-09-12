@@ -19,12 +19,12 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 -	origem
 -	destino
 
-***OBSERVAÇÕES:***
+***Observações:***
 
-- A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**
-- A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***
-- O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***
-- A relação de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+- A *data* deverá ser informada no padrão **yyyy-MM-dd HH:mm:ss.SSS**.
+- A *origem* deverá ser informada como Identificador Time Zone (**TZ identifier**), exemplo ***Europe/Berlin***.
+- O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***.
+- Uma lista de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
 
 **Resposta** - A seguir, detalhamento das possíveis respostas:
 
@@ -36,7 +36,7 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 ```javascript
 // GET /fuso-horario
 {
-	"data": "2018-03-01 13:23:25",
+	"data": "2018-03-01 13:23:25.000",
 	"origem": "Europe/Berlin",
 	"destino": "America/Sao_Paulo"
 }
