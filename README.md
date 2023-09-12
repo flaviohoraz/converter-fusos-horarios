@@ -1,4 +1,5 @@
-# converter-fusos-horarios
+# API Converter Fusos Horários
+
 ## Descrição
 API para conversão de data local de um fuso horário qualquer para um fuso horário distinto.
 
@@ -26,11 +27,11 @@ A API possui rota única, que deverá retornar a data convertida para o fuso inf
 - O *destino* deverá ser informado como Identificador Time Zone (**TZ identifier**), exemplo ***America/Bahia***.
 - Uma lista de **TZ identifier** pode ser conferida em https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
 
-**Resposta** - A seguir, detalhamento das possíveis respostas:
+**Resposta** - A seguir, detalhamento das possíveis respostas da rota:
 
-1. Em caso de **sucesso**, será retornado um ***status code*** 200 e enviado, no corpo (body), um objeto com uma propriedade *Data equivalente* com a resposta.
+1. Em caso de **sucesso**, será retornado um ***status code*** 200 e, no corpo (body), um objeto com uma propriedade *Data equivalente* com a resposta.
 
-2. Em caso de **falha na validação**, a resposta enviará um ***status code apropriado*** e, em seu corpo (body), um objeto com a propriedade *mensagem*, que terá como valor um texto explicando o motivo da falha.
+2. Em caso de **falha na validação**, será retornado um ***status code apropriado*** e, no corpo (body), um objeto com a propriedade *mensagem*, que terá como valor um texto explicando o motivo da referida falha.
 
 ### Exemplo de Requisição
 ```javascript
